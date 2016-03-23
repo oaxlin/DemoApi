@@ -21,7 +21,10 @@ sub load {
         host   => 'localhost',
         service_name => 'demo_api',
         brand  => 'test',
-        pass   => '-',  # no password is required
+
+        allow_auth_basic => 1, # other options available
+        pass   => 'mypass',
+
         port   => 50080,
         no_ssl => 1,
         user   => 'jterry',
