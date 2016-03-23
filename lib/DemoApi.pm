@@ -4,11 +4,15 @@ use warnings;
 use base qw(Respite::Base);
 
 sub api_meta {
-    return shift->{'api_meta'} ||= { # vtable cached here
+    return shift->{'api_meta'} ||= {
         namespaces => {
             math => {
                 match => '__',
                 package => 'DemoApi::Math',
+            },
+            system => {
+                match => '__',
+                package => 'DemoApi::System',
             },
         },
     };
