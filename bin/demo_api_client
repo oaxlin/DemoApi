@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use lib qw(/Users/jterry/demo_api_server/lib /Users/jterry/core_lib/lib);
+use Respite::CommandLine;
+
+Respite::CommandLine->run({ api_meta => 'DemoApi' });

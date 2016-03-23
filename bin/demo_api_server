@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use lib qw(/Users/jterry/demo_api_server/lib);
+use Respite::Server;
+use config;
+
+Respite::Server->run_commandline(
+    dispatch_class => 'DemoApi',
+    %{config::config->{'demo_api_service'}},
+);
