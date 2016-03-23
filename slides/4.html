@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Demo API - The simplest server</title>
+</head>
+<body>
+<center style="font-face:georgia">
+<font style="font-size:2em" face="Georgia">
+<table><tr><td>
+<h1>Adding argument validation</h1>
+
+<div style='background-color:#ddd;border:1px solid grey;padding:3px'>git checkout 4d504e</div><br>
+
+Validation follows a pattern similar to CGI::Ex::Validate<br>
+<a href="http://search.cpan.org/~rhandom/CGI-Ex-1.14/lib/CGI/Ex/Validate.pm">http://search.cpan.org/~rhandom/CGI-Ex-1.14/lib/CGI/Ex/Validate.pm</a><br>
+
+<ul>
+    <li> add__meta
+</ul>
+
+Test our server: (locally)<br><br>
+<div style='background-color:#ddd;border:1px solid grey;padding:3px'>./bin/demo_api_client add value1 5 value2 3</div><br>
+<div style='background-color:#ddd;border:1px solid grey;padding:3px'>./bin/demo_api_client add value1 5 value2 <font color=red>fred</font></div><br>
+
+You also get (somewhat) free documentation:<br><br>
+<div style='background-color:#ddd;border:1px solid grey;padding:3px'>./bin/demo_api_client</div><br>
+<div style='background-color:#ddd;border:1px solid grey;padding:3px'>./bin/demo_api_client add__meta</div><br>
+</td></tr></table>
+</center>
+</body>
+</html>

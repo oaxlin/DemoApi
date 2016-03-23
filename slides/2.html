@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Demo API - The simplest server</title>
+</head>
+<body>
+<center style="font-face:georgia">
+<font style="font-size:2em" face="Georgia">
+<table><tr><td>
+<h1>Basic server/client setup</h1>
+
+<div style='background-color:#ddd;border:1px solid grey;padding:3px'>https://github.com/oaxlin/DemoApi.git</div><br>
+<div style='background-color:#ddd;border:1px solid grey;padding:3px'>git checkout 8dd840</div><br>
+
+Here we have setup the simplest server possible.
+
+<ul>
+    <li> bin/demo_api_client
+    <li> bin/demo_api_server
+    <li> lib/config.pm
+    <li> lib/DemoApi.pm
+</ul>
+
+By default new servers have two valid api methods, these help with testing and self documentation.<br>
+
+<ul>
+    <li> methods
+    <li> hello
+</ul>
+
+Test our server: (locally)<br><br>
+<div style='background-color:#ddd;border:1px solid grey;padding:3px'>./bin/demo_api_client</div><br>
+<div style='background-color:#ddd;border:1px solid grey;padding:3px'>./bin/demo_api_client hello arg1 val1 arg2 val2</div><br>
+Start the server:<br><br>
+<div style='background-color:#ddd;border:1px solid grey;padding:3px'>./bin/demo_api_server start</div><br>
+</td></tr></table>
+</center>
+</body>
+</html>

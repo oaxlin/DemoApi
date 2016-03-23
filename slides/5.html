@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Demo API - The simplest server</title>
+</head>
+<body>
+<center style="font-face:georgia">
+<font style="font-size:2em" face="Georgia">
+<table><tr><td>
+<h1>Adding basic authentication</h1>
+
+<div style='background-color:#ddd;border:1px solid grey;padding:3px'>git checkout a04646</div><br>
+
+Validation follows a pattern similar to CGI::Ex::Validate<br>
+
+<ul>
+    <li> lib/config.pm
+</ul>
+
+Test our server:<br><br>
+<div style='background-color:#ddd;border:1px solid grey;padding:3px'>curl http://localhost:50080/demo_api/add/username \<br> -d '{"value1":1,"value2":2}' -H 'Content-type: x-applicon; charset=utf-8' -u you:mypass</div><br>
+Note that any username works, only the password is verified.
+</td></tr></table>
+</center>
+</body>
+</html>
