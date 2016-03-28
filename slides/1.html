@@ -11,16 +11,19 @@
 </table>
 <br>
 <table><tr><td>
+<h1>Recommended optional cpan module</h1>
 <ul>
-    <li> Easy to setup and use 
-      <ul>
-        <li> simple net::server or apache options<br><br>
-        <li> command line tool
+    <li>Data::URIEncode<br>
+    Used by the command line interface to allow complex data structures (hashes and arrays)
+</ul>
+<h1>Easy to setup and use</h1>
+<ul>
+      <li> simple net::server or apache options<br><br>
+      <li> command line tool
         <br><div style='background-color:#ddd;border:1px solid grey;padding:3px'>./bin/demo_api_client add value1 1 value2 2</div><br>
-        <li> Easily debugged with simple linux tools
+      <li> Easily debugged with simple Linux tools
         <br><div style='background-color:#ddd;border:1px solid grey;padding:3px'>curl http://localhost:50080/demo_api/add/username \
             <br>&nbsp; -d '<font color="red">{"value1":1,"value2":2}</font>' -H 'Content-type: x-application/json; charset=utf-8'</div>
-      </ul>
       <br>
     <li> If created properly, your code/validation is self documenting
 

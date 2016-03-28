@@ -17,7 +17,7 @@ Validation follows a pattern similar to CGI::Ex::Validate<br>
 </ul>
 
 Test our server:<br><br>
-<div style='background-color:#ddd;border:1px solid grey;padding:3px'>curl http://localhost:50080/demo_api/add/username \<br> -d '{"value1":1,"value2":2}' -H 'Content-type: x-applicon; charset=utf-8' -u you:mypass</div><br>
+<div style='background-color:#ddd;border:1px solid grey;padding:3px'>curl http://localhost:50080/demo_api/add/username \<br> -d '{"value1":1,"value2":2}' -H 'Content-type: application/json; charset=utf-8' -u you:mypass</div><br>
 Note that any username works, only the password is verified.
 </td></tr></table>
 </center>
