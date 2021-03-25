@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Demo API - The simplest server</title>
+</head>
+<body>
+<center style="font-face:georgia">
+<font style="font-size:2em" face="Georgia">
+<table><tr><td>
+<h1>Argument validation, complex data</h1>
+
+Validation follows a pattern similar to CGI::Ex::Validate<br>
+<a href="http://search.cpan.org/~rhandom/CGI-Ex-1.14/lib/CGI/Ex/Validate.pm">http://search.cpan.org/~rhandom/CGI-Ex-1.14/lib/CGI/Ex/Validate.pm</a><br>
+
+<br>Using arrays:<br><br>
+<div style='background-color:#ddd;border:1px solid grey;padding:3px'>./bin/demo_api_client hello value:0 5 value:1 3sir</div><br>
+<div style='background-color:#ddd;border:1px solid grey;padding:3px'>{"value":["5","3sir"]}</div><br>
+
+Using a hash:<br><br>
+<div style='background-color:#ddd;border:1px solid grey;padding:3px'>./bin/demo_api_client hello hash.key 5 hash.another_key 3sir</div><br>
+<div style='background-color:#ddd;border:1px solid grey;padding:3px'>{"hash":{"key":"5","another_key":"3sir"}}</div><br>
+
+</td></tr></table>
+</center>
+</body>
+</html>
